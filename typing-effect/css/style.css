@@ -1,0 +1,11 @@
+.msi {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: crimson;
+    padding: 50px 100px;
+}
+
+.msi #msi {
+    color: tomato;
+}

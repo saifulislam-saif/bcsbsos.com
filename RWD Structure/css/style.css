@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+ol,
+li,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+/*  ==================== Common CSS end ==================== */
+
+/*  =================== Sticky Footer Start ================  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.page__content {
+    min-height: 100%;
+    /*Margin-bottom: - value of footer height*/
+    margin-bottom: -60px;
+}
+
+.page__content::after {
+    content: "";
+    display: block;
+}
+
+footer,
+.page__content::after {
+    height: 60px;
+}
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===================== Sticky Footer End ==================   */
