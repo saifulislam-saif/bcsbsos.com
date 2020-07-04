@@ -659,12 +659,12 @@ footer {
 footer .social_link a i {
     width: 40px;
     height: 40px;
-    line-height: 40px;
+    line-height: 36px;
     text-align: center;
     border-radius: 50%;
     background: var(--color-7);
     color: #fff;
-    border: 1px solid #fff;
+    border: 2px solid var(--color-7);
     font-size: 22px;
     margin: 0 5px;
 
@@ -678,6 +678,7 @@ footer .social_link a i {
 footer .social_link a i:hover {
     color: var(--color-7);
     background: #fff;
+    border: 2px solid var(--color-7);
 }
 
 footer p {
