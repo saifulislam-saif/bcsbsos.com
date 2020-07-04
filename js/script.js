@@ -1,5 +1,45 @@
+"use strict"
+//login register
+const x = document.getElementById('login')
+const y = document.getElementById('register')
+const z = document.getElementById('btn')
+
+function login() {
+    x.style.left = "50px";
+    y.style.left = "450px";
+    z.style.left = "0px";
+}
+
+function register() {
+    x.style.left = "-400px";
+    y.style.left = "50px";
+    z.style.left = "110px";
+}
+
 $(function () {
-    "use strict"
+    //password toggle eye
+    $(".toggle-password").click(function () {
+
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
+
+    $(".toggle-password-r").click(function () {
+
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
+
 
     //Student Counter
     $('.counter').counterUp({
@@ -51,11 +91,8 @@ $(function () {
     //Logo Typing Effect Create By MSI:313
     //msiTyping("#logo_typing", 250, 0);
 
-    //Mix Available Batch
-    var containerEl = document.querySelector('.schedule_box');
-
-    var mixer = mixitup(containerEl);
-
-
+    //$('.login_register_click').click(function () {
+    //  $('.login_register_body').removeClass('login_hidden');
+    //});
 
 });
