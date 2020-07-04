@@ -521,6 +521,7 @@ body {
     position: absolute;
     left: 50%;
     bottom: 15px;
+    bottom: 0;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -566,12 +567,18 @@ body {
 }
 
 #faq_part .header h2 {
-    font-size: 4rem;
-    padding: 1rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    margin: 0;
+    color: var(--color-2);
     color: #222;
+    color: #fff;
+    font-size: 46px;
+    font-weight: 700;
+    font-family: sans-serif;
+    line-height: 160px;
+    margin-bottom: -30px;
+    background: var(--color-7);
+    display: inline;
+    padding: 10px 25px;
+    border-radius: 50px;
 }
 
 /*

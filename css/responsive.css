@@ -125,36 +125,8 @@
 
     /* ================= Menu Part End ================= */
 
-    /* ================= Header Part Start ================= */
-
-    .login_hidden {
-        overflow: hidden;
-        height: 70px;
-        transform: translateY(-50px);
-    }
-
-    #header_part h1 {
-        font-size: 24px;
-        line-height: 32px;
-        word-spacing: 0;
-    }
-
-    /* ================= Header Part End ================= */
-
     /* ================= Banner Part Start ================= */
-    .banner_text h3 {
-        font-size: 32px;
-        line-height: 120px;
-    }
 
-    .banner_text a {
-        font-size: 28px;
-        line-height: 60px;
-    }
-
-    .banner_text a span {
-        font-size: 32px;
-    }
 
     /* ================= Banner Part End ================= */
 
@@ -165,41 +137,24 @@
 
     /* ================= Course Part End ================= */
 
-    /* ================= Schedule Part Start ================= */
-    #schedule_part h2 {
-        font-size: 28px;
-        font-weight: 500;
-    }
-
-    #schedule_part a {
-        font-size: 28px;
-        line-height: 60px;
-    }
-
-    #schedule_part a span {
-        font-size: 32px;
-    }
-
-    /* ================= Schedule Part End ================= */
-
     /* ================= Testimonial Part Start ================= */
     #testimonial_part .header h2 {
-        font-size: 42px;
-        padding-left: 0;
-        padding-right: 0;
+        font-size: 28px;
     }
 
     /* ================= Testimonial Part End ================= */
 
     /* ================= FAQ Part Start ================= */
     #faq_part .header h2 {
-        font-size: 46px;
+        font-size: 28px;
     }
 
+/*
     .faq_body {
         overflow: auto;
         height: 630px;
     }
+*/
 
     .faq_body .card .card-header a {
         font-size: 18px;
@@ -349,47 +304,28 @@
 
     /* ================= Counter Part End ================= */
 
-    /* ================= Schedule Part Start ================= */
-    #schedule_part h2 {
-        font-size: 22px;
-        font-weight: 500;
-        line-height: 80px;
-    }
-
-    #schedule_part a {
-        font-size: 24px;
-        line-height: 60px;
-    }
-
-    #schedule_part a span {
-        font-size: 28px;
-    }
-
-    .schedule_box tr td {
-        font-weight: 500;
-    }
-
-    /* ================= Schedule Part End ================= */
-
     /* ================= Testimonial Part Start ================= */
     #testimonial_part .header h2 {
         font-size: 22px;
-        padding: 0;
-        font-weight: 500;
+        line-height: 100px;
+        margin-top: -20px;
     }
 
     /* ================= Testimonial Part End ================= */
 
     /* ================= FAQ Part Start ================= */
     #faq_part .header h2 {
-        font-size: 36px;
-        font-weight: 600;
+        font-size: 22px;
+        line-height: 100px;
+        margin-top: -20px;
     }
 
+/*
     .faq_body {
         overflow: auto;
         height: 630px;
     }
+*/
 
     .faq_body .card .card-header a {
         font-size: 16px;
