@@ -161,7 +161,7 @@ body {
 /* ================= Banner Part Start ================= */
 #banner_part {
     margin-top: 80px;
-    background: #fefefe;
+    background: #f1f1f1;
     padding: 30px 0;
     text-align: center;
 }
@@ -192,12 +192,14 @@ body {
 }
 
 #log_part .toggle-btn {
-    padding: 7px 20px 7px 35px;
+    width: 49%;
+    padding: 7px 0;
     cursor: pointer;
     background: transparent;
     border: 0;
     outline: none;
     position: relative;
+    text-align: center;
 }
 
 #log_part #btn {
@@ -206,8 +208,6 @@ body {
     position: absolute;
     width: 110px;
     height: 100%;
-    background: #ffad06;
-    background: #ff105f;
     background: var(--color-7);
     border-radius: 30px;
 
@@ -348,7 +348,7 @@ body {
 /* ================= Course Part Start ================= */
 #course_part {
     padding: 0 0 30px;
-    background: #f1f1f1;
+    background: #fff;
 }
 
 #course_part h2 {
@@ -407,7 +407,7 @@ body {
 
 #course_part .item p {
     font-size: 22px;
-    color: #22222240;
+    color: #22222280;
     line-height: 60px;
     text-align: left;
 
@@ -462,7 +462,7 @@ body {
 #testimonial_part {
     background: var(--color-2);
     background: #f1f1f1;
-    padding: 30px 0;
+    padding: 0px 0 30px;
 }
 
 #testimonial_part .header h2 {
@@ -562,7 +562,7 @@ body {
 /* ================= FAQ Part Start ================= */
 #faq_part {
     background: #fff;
-    padding: 30px 0;
+    padding: 0px 0 30px;
 }
 
 #faq_part .header h2 {
@@ -652,7 +652,7 @@ body {
 footer {
     background: #f1f1f1;
     text-align: center;
-    padding: 30px 0;
+    padding: 30px 0  15px;
 }
 
 footer .social_link a i {
