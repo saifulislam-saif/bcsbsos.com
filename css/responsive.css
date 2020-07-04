@@ -153,7 +153,7 @@
         font-size: 28px;
     }
 
-/*
+    /*
     .faq_body {
         overflow: auto;
         height: 630px;
@@ -250,23 +250,35 @@
         transform: translateY(-50px);
     }
 
-    #banner_part .box {
-        height: 50vw;
+    #log_part .form-box {
+        height: 300px;
     }
 
-    .banner_text h3 {
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 80px;
+    #banner_part {
+        margin-top: 80px;
+        background: #fefefe;
+        padding: 15px 0;
+        text-align: center;
     }
 
-    .banner_text a {
-        font-size: 24px;
-        line-height: 60px;
+    #log_part .button-box {
+        margin: 15px auto;
     }
 
-    .banner_text a span {
-        font-size: 28px;
+    #log_part .input-group {
+        top: 60px;
+    }
+
+    #log_part #register.input-group {
+        top: 55px;
+    }
+
+    #log_part .input-field {
+        padding: 5px 0;
+    }
+
+    #log_part #register .input-field {
+        padding: 5px 0;
     }
 
     /* ================= Banner Part End ================= */
@@ -326,7 +338,7 @@
         margin-top: -20px;
     }
 
-/*
+    /*
     .faq_body {
         overflow: auto;
         height: 630px;

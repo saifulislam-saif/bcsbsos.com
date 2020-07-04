@@ -310,7 +310,7 @@ body {
 @media screen and (max-width: 767px) {
     #log_part .form-box {
         width: 350px;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     #log_part .submit-btn {
@@ -327,7 +327,7 @@ body {
     #log_part .form-box {
         width: 100%;
         border-radius: 0;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     #log_part .submit-btn {
@@ -341,7 +341,6 @@ body {
     }
 }
 
-/* ================= Login Part End ================= */
 
 /* ================= Banner Part End ================= */
 
