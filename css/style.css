@@ -455,9 +455,6 @@ body {
 /* ================= Counter Part End ================= */
 
 
-
-
-
 /* ================= Testimonial Part Start ================= */
 #testimonial_part {
     background: var(--color-2);
@@ -561,7 +558,7 @@ body {
 
 /* ================= FAQ Part Start ================= */
 #faq_part {
-    background: #fff;
+    background: #f1f1f1;
     padding: 0px 0 30px;
 }
 
@@ -643,16 +640,81 @@ body {
 /* ================= FAQ Part End ================= */
 
 
-/* ================= Menu Part Start ================= */
+/* ================= About Part Start ================= */
+#about_part {
+    background: #fff;
+    padding: 0px 0 30px;
+}
 
-/* ================= Menu Part End ================= */
+#about_part .header h2 {
+    color: var(--color-2);
+    color: #222;
+    color: #fff;
+    font-size: 46px;
+    font-weight: 700;
+    font-family: sans-serif;
+    line-height: 160px;
+    margin-bottom: -30px;
+    background: var(--color-7);
+    display: inline;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+#about_part h4 {
+    color: #222;
+    font-size: 24px;
+    padding: 30px 0 15px;
+}
+
+#about_part a {
+    color: var(--color-7);
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+#about_part ul li,
+#about_part p {
+    color: #444;
+    font-size: 18px;
+    line-height: 2;
+    padding: 0 30px 5px 30px;
+    text-align: justify;
+    position: relative;
+}
+
+/*
+#about_part p::after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 7px;
+    height: 7px;
+    background: #222;
+    border-radius: 50%;
+}
+*/
+
+/* ================= About Part End ================= */
+
+
+/* ================= Contact Part Start ================= */
+
+/* ================= Contact Part End ================= */
 
 
 /* ================= Footer Part Start ================= */
 footer {
     background: #f1f1f1;
     text-align: center;
-    padding: 30px 0  15px;
+}
+
+footer h4 {
+    font-size: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 15px;
 }
 
 footer .social_link a i {
@@ -681,16 +743,12 @@ footer .social_link a i:hover {
 }
 
 footer p {
-    line-height: 60px;
+    line-height: 30px;
     color: #222;
 }
 
-footer p a {
-    color: var(--color-7);
-}
-
-footer p a:hover {
-    text-decoration: underline;
+footer i {
+    font-size: 18px;
     color: var(--color-7);
 }
 
