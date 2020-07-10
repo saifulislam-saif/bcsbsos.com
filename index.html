@@ -13,8 +13,7 @@
     <meta http-equiv="refresh" content="120">
 
     <!-- Google Font Embed -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- ================= CSS Link =================
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -26,6 +25,7 @@
 
     <!-- Others CSS -->
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/venobox.css" type="text/css" media="screen" />
 
 
     <!-- Main CSS -->
@@ -44,7 +44,7 @@
     <!-- ================= Menu Part Start ================= -->
     <nav id="menu_part" class="navbar navbar-expand-lg main_menu shadow-sm fixed-top">
         <div class="container-lg container p-0">
-            <a class="navbar-brand d-flex p-lg-0 py-0 pl-3 m-0" href="#">
+            <a class="navbar-brand d-flex py-0 pl-3 m-0" href="#">
                 <img src="images/bcs.jpg" alt="bcs">
                 <span class="text">
                     <h3 class="bcs_text">Bangladesh Cancer Society</h3>
@@ -52,7 +52,7 @@
                 </span>
                 <img src="images/bsos.jpg" alt="bsos">
             </a>
-            <button class="navbar-toggler p-lg-0 pr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler p-lg-0 p-0 mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars menu_bar"></i>
             </button>
 
@@ -62,19 +62,22 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#course_part">Course</a>
+                        <a class="nav-link" href="#course">Course</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testimonial_part">Gallery</a>
+                        <a class="nav-link" href="#gallery">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#faq_part">FAQ</a>
+                        <a class="nav-link" href="#testimonial">Testimonial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about_part">About</a>
+                        <a class="nav-link" href="#faq">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#footer_part">Contact</a>
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link menu_button login_register_click" href="#log_part">Login</a>
@@ -86,327 +89,507 @@
 
     <!-- ================= Menu Part End ================= -->
 
-
-    <!-- ================= Banner Part Start ================= -->
-    <section id="banner_part">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-xl-8 col-lg-7 order-lg-0 order-1">
-                    <!-- Carousel Start -->
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators mb-2">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/banner-1.jpg" class="d-block w-100" alt="banner-1">
+    <main id="app" style="padding: 80px 0 0;">
+        <!-- ================= Banner Part Start ================= -->
+        <section id="banner_part">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-xl-8 col-lg-7 order-lg-0 order-1">
+                        <!-- Carousel Start -->
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators mb-2">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/banner-1.jpg" class="d-block w-100" alt="banner-1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/banner-2.jpg" class="d-block w-100" alt="banner-2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/banner-3.jpg" class="d-block w-100" alt="banner-3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/banner-4.jpg" class="d-block w-100" alt="banner-4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/banner-5.jpg" class="d-block w-100" alt="banner-5">
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="images/banner-2.jpg" class="d-block w-100" alt="banner-2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/banner-3.jpg" class="d-block w-100" alt="banner-3">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/banner-4.jpg" class="d-block w-100" alt="banner-4">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/banner-5.jpg" class="d-block w-100" alt="banner-5">
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <!-- Carousel End -->
+                    </div>
+                    <div class="col-xl-4 col-lg-5 order-lg-1 order-0 login_register_body">
+                        <!-- Form Start -->
+                        <div id="log_part" class="">
+                            <div class="form-box shadow-sm border-top border-bottom border-right border-left">
+                                <div class="button-box">
+                                    <div id="btn"></div>
+                                    <button type="button" class="toggle-btn login_register_click" onclick="login()" action="">Log In</button>
+                                    <button type="button" class="toggle-btn login_register_click" onclick="register()">Register</button>
+                                </div>
+                                <form method="" action="" id="login" class="input-group">
+                                    <input type="email" class="input-field" name="email" placeholder="Email" required>
+                                    <input type="password" class="input-field password-field" name="password" placeholder="Password" required>
+                                    <i toggle=".password-field" class="fa fa-fw fa-eye field-icon toggle-password"></i>
+                                    <input type="checkbox" class="check-box"><span>Remember Me</span>
+                                    <button type="submit" class="submit-btn">Submit</button>
+                                    <a href="#" class="forgot_text btn-link">Forgot password?</a>
+                                </form>
+                                <form method="" action="" id="register" class="input-group">
+                                    <input type="text" id="name" class="input-field" placeholder="Full Name" name="name" value="" required>
+                                    <input type="email" id="email" class="input-field" placeholder="E-mail" name="email" value="" required>
+                                    <input type="text" id="phone_number" class="input-field" placeholder="Mobile Number" name="phone_number" value="" required>
+                                    <input type="password" id="password" class="input-field password-field-r" placeholder="Password" name="password" required>
+                                    <i toggle=".password-field-r" class="fa fa-fw fa-eye field-icon toggle-password-r"></i>
+                                    <input id="password-confirm" type="password" class="input-field password-field-r" placeholder="Confirm Password" name="password_confirmation" required>
+                                    <button type="submit" class="submit-btn">Submit</button>
+                                </form>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
+                        <!-- Form End -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= Banner Part End ================= -->
+
+
+        <div id="course" style="transform: translateY(-80px);"></div>
+        <!-- ================= Course Part Start ================= -->
+        <section id="course_part">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2>Our Courses</h2>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 g-lg-3">
+
+                    <div class="col item item-1">
+                        <a href="#" class="card">
+                            <div class="card-body border">
+                                <h5>Refresher's Course</h5>
+                                <p>Learn More<i class="far fa-arrow-alt-circle-right"></i></p>
+                            </div>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
+                    </div>
+
+                    <div class="col item item-1">
+                        <a href="#" class="card">
+                            <div class="card-body border">
+                                <h5>Refresher's Course</h5>
+                                <p>Learn More<i class="far fa-arrow-alt-circle-right"></i></p>
+                            </div>
                         </a>
                     </div>
-                    <!-- Carousel End -->
-                </div>
-                <div class="col-xl-4 col-lg-5 order-lg-1 order-0 login_register_body">
-                    <!-- Form Start -->
-                    <div id="log_part" class="">
-                        <div class="form-box shadow-sm border-top border-bottom border-right border-left">
-                            <div class="button-box">
-                                <div id="btn"></div>
-                                <button type="button" class="toggle-btn login_register_click" onclick="login()" action="">Log In</button>
-                                <button type="button" class="toggle-btn login_register_click" onclick="register()">Register</button>
+
+                    <div class="col item item-1">
+                        <a href="#" class="card">
+                            <div class="card-body border">
+                                <h5>Refresher's Course</h5>
+                                <p>Learn More<i class="far fa-arrow-alt-circle-right"></i></p>
                             </div>
-                            <form method="" action="" id="login" class="input-group">
-                                <input type="email" class="input-field" name="email" placeholder="Email" required>
-                                <input type="password" class="input-field password-field" name="password" placeholder="Password" required>
-                                <!--                                <span toggle=".password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>-->
-                                <input type="checkbox" class="check-box"><span>Remember Me</span>
-                                <button type="submit" class="submit-btn">Submit</button>
-                                <a href="#" class="forgot_text btn-link">Forgot password?</a>
-                            </form>
-                            <form method="" action="" id="register" class="input-group">
-                                <input type="text" id="name" class="input-field" placeholder="Full Name" name="name" value="" required>
-                                <input type="email" id="email" class="input-field" placeholder="E-mail" name="email" value="" required>
-                                <input type="text" id="phone_number" class="input-field" placeholder="Mobile Number" name="phone_number" value="" required>
-                                <input type="password" id="password" class="input-field password-field-r" placeholder="Password" name="password" required>
-                                <!--                                <span toggle=".password-field-r" class="fa fa-fw fa-eye field-icon toggle-password-r"></span>-->
-                                <input id="password-confirm" type="password" class="input-field password-field-r" placeholder="Confirm Password" name="password_confirmation" required>
-                                <button type="submit" class="submit-btn">Submit</button>
-                            </form>
-                        </div>
+                        </a>
                     </div>
-                    <!-- Form End -->
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ================= Banner Part End ================= -->
-
-
-    <!-- ================= Course Part Start ================= -->
-    <section id="course_part">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-                    <h2>Our Courses</h2>
-                </div>
-            </div>
-
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 g-lg-3">
-
-                <div class="col item item-1">
-                    <a href="#" class="card">
-                        <div class="card-body">
-                            <h5>Refresher's Course</h5>
-                            <p>Learn More<i class="far fa-arrow-alt-circle-right"></i></p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col item item-1">
-                    <a href="#" class="card">
-                        <div class="card-body">
-                            <h5>Refresher's Course</h5>
-                            <p>Learn More<i class="far fa-arrow-alt-circle-right"></i></p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col item item-1">
-                    <a href="#" class="card">
-                        <div class="card-body">
-                            <h5>Refresher's Course</h5>
-                            <p>Learn More<i class="far fa-arrow-alt-circle-right"></i></p>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ================= Course Part End ================= -->
+        <!-- ================= Course Part End ================= -->
 
 
-    <!-- ================= Testimonial Part Start ================= -->
-    <section id="testimonial_part">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="header text-center">
-                        <h2>What Our Doctors Say</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row testimonial_slider text-left">
-
-                <div class="item p-2">
-                    <div class="col-12 card">
-                        <div class="card-body">
-                            <div class="img">
-                                <img class="img-fluid w-100" src="images/testimonial.jpg" alt="testimonial">
-                            </div>
-                            <p><span>"</span>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iusto accusamus a sapiente, dolor nulla consequatur! Ratione consequatur enim, aliquam illo voluptatibus cum eius error, tempora, recusandae ullam quos. Fugit!
-                                <span>"</span></p>
-                            <h5>Dr. Mahmud Ali</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item p-2">
-                    <div class="col-12 card">
-                        <div class="card-body">
-                            <div class="img">
-                                <img class="img-fluid w-100" src="images/testimonial.jpg" alt="testimonial">
-                            </div>
-                            <p><span>"</span>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iusto accusamus a sapiente, dolor nulla consequatur! Ratione consequatur enim, aliquam illo voluptatibus cum eius error, tempora, recusandae ullam quos. Fugit!
-                                <span>"</span></p>
-                            <h5>Dr. Mahmud Ali</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item p-2">
-                    <div class="col-12 card">
-                        <div class="card-body">
-                            <div class="img">
-                                <img class="img-fluid w-100" src="images/testimonial.jpg" alt="testimonial">
-                            </div>
-                            <p><span>"</span>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iusto accusamus a sapiente, dolor nulla consequatur! Ratione consequatur enim, aliquam illo voluptatibus cum eius error, tempora, recusandae ullam quos. Fugit!
-                                <span>"</span></p>
-                            <h5>Dr. Mahmud Ali</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item p-2">
-                    <div class="col-12 card">
-                        <div class="card-body">
-                            <div class="img">
-                                <img class="img-fluid w-100" src="images/testimonial.jpg" alt="testimonial">
-                            </div>
-                            <p><span>"</span>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iusto accusamus a sapiente, dolor nulla consequatur! Ratione consequatur enim, aliquam illo voluptatibus cum eius error, tempora, recusandae ullam quos. Fugit!
-                                <span>"</span></p>
-                            <h5>Dr. Mahmud Ali</h5>
+        <div id="gallery" style="transform: translateY(-80px);"></div>
+        <!-- ================= Gallery Part Start ================= -->
+        <section id="gallery_part">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header text-center">
+                            <h2>Photo Gallery</h2>
                         </div>
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- ================= Testimonial Part End ================= -->
-
-
-    <!-- ================= FAQ Part Start ================= -->
-    <section id="faq_part">
-        <div class="container">
-            <div class="header text-center">
-                <h2>F A Q</h2>
-            </div>
-            <div class="row">
-                <div class="col">
-
-                    <div id="accordion" class="faq_body">
-
-                        <div class="card">
-                            <div class="card-header bg-white" id="heading-1">
-                                <a href="" class="mix_solve" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-                                    A. What is online registration process?
+                <div class="body row row-cols-lg-4 row-cols-sm-3 row-cols-2 g-0">
+                    <div class="col border">
+                        <div class="img">
+                           <img class="img-fluid w-100" src="images/gallery-1.jpg" alt="gallery-1">
+                            <div class="overly">
+                                <a class="venobox" data-gall="gallery01" href="images/gallery-1.jpg">
+                                    <i class="fas fa-search-plus"></i>
                                 </a>
                             </div>
-
-                            <div id="collapse-1" class="collapse" aria-labelledby="heading-1" data-parent="#accordion">
-                                <div class="card-body bg-white">
-                                    <p>1. Click on the 'Register' button</p>
-                                    <p>2. Provide your name, mobile number, email address and a password of at least 6 digit.</p>
-                                    <p>3. Finaly Click 'Submit' button.</p>
-                                    <p>Note : Your email address will be your user ID.</p>
-                                </div>
-                            </div>
                         </div>
-
-                        <div class="card">
-                            <div class="card-header bg-white" id="heading-2">
-                                <a href="" class="mix_solve" data-toggle="collapse" data-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
-                                    B. How i watch videos?
+                    </div>
+                    <div class="col border">
+                        <div class="img">
+                            <img src="images/gallery-2.jpg" alt="gallery-2" class="img-fluid w-100">
+                            <div class="overly">
+                                <a class="venobox" data-gall="gallery01" href="images/gallery-2.jpg">
+                                    <i class="fas fa-search-plus"></i>
                                 </a>
                             </div>
-
-                            <div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#accordion">
-                                <div class="card-body bg-white">
-                                    <p>Videos may be RECORDED or LIVE.</p>
-                                    <p>Live videos will be given to your profile and you can watch it later if you missed the LIVE session due to any unavoidable situation. (Plz click on "Online Lecture Links")</p>
-                                    <p>All videos are organised in your profile and videos.</p>
-                                    <br>
-                                    <p>1. Are password protected &amp; the password will be shown just before your video start on the video frame. Passwords will remain there and you don't need to memorise them for recall.</p>
-                                    <p>2. Will remain for the whole time of your course period.</p>
-                                    <p>3. Can be watched whenever you want.</p>
-                                    <p>4. Can be watched so many times as your wish.</p>
-                                    <p>5. Can be paused at any moment &amp; then be resumed again and again. When you start playing videos then software system registered with your IP address. Your SIF profile may be deactivated without any prior notice if you share with anyone.So be careful about your ID &amp; Password. As all the videos will remain organised in your profile for whole duration so you don't need to download and we can't help regarding this.</p>
-                                </div>
-                            </div>
-
                         </div>
-
-                        <div class="card">
-                            <div class="card-header bg-white" id="heading-3">
-                                <a href="" class="mix_solve" data-toggle="collapse" data-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
-                                    C. Steps required to take a lecture class.
+                    </div>
+                    <div class="col border">
+                        <div class="img">
+                            <img src="images/gallery-3.jpg" alt="gallery-3" class="img-fluid w-100">
+                            <div class="overly">
+                                <a href="">
+                                    <i class="fa fa-search-plus"></i>
                                 </a>
                             </div>
-
-                            <div id="collapse-3" class="collapse" aria-labelledby="heading-3" data-parent="#accordion">
-                                <div class="card-body bg-white">
-                                    <p>1. First open Google Chrome in the browser (Avoid UC Browser).</p>
-                                    <p>2. Enter the web site <a href="http://www.bcsbsos.com">www.bcsbsos.com</a></p>
-                                    <p>3. Click Login and login with your Email ID and Password.</p>
-                                    <p>4. Click on Online Lecture Links according to the scheduled date and time given in My schedule in the dashboard of your profile.</p>
-                                    <p>5. Click on the name of the scheduled lecture.</p>
-                                    <p>6. As soon as you turn on the video, you will see the VIDEO Password on the screen and type it in the specified place and click Watch Video.</p>
-                                    <p>7. Videos may take up to 5 minutes to load from the server.</p>
-                                    <p>8. Enable high net speed to avoid video streaming and reduce video resolution from settings.</p>
-                                    <p>9. You can increase or decrease the playback speed at your convenience from the video settings option. (.75x, 1.25x etc)</p>
-                                    <p>10. By clicking on the Lecture Sheet of the Dashboard, you will be able to download the lecture sheet of your scheduled class.</p>
-                                    <p>11. There is an option to pause the video, you can pause the video if you need a short break for any reason. You can drag back and forth as per your convenience and need.</p>
-                                    <p>12. Even if you can't watch the lecture video during the routine time, you can watch it even after the scheduled time, but try to complete the watch before the next exam.</p>
-                                    <p>13. Use the COMPLAIN BOX on the dashboard for any IT related issues.</p>
-                                    <p>14. Sit with the necessary preparation before you sit in the online class. Fully charge the device (computer, laptop, tab or smartphone), make sure you have an internet connection, and refrain from exchanging calls on the device during class. You can keep a notebook with a pen, headphones or earphones.</p>
-                                </div>
-                            </div>
-
                         </div>
-
-                        <div class="card">
-                            <div class="card-header bg-white" id="heading-4">
-                                <a href="" class="mix_solve" data-toggle="collapse" data-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
-                                    D. How to appear Online Exam?
+                    </div>
+                    <div class="col border">
+                        <div class="img">
+                            <img src="images/gallery-4.jpg" alt="gallery-4" class="img-fluid w-100">
+                            <div class="overly">
+                                <a href="">
+                                    <i class="fa fa-search-plus"></i>
                                 </a>
                             </div>
-
-                            <div id="collapse-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordion">
-                                <div class="card-body bg-white">
-                                    <p>
-                                        You can get the exams by clicking on Online Exams &amp; Results Links in your profile Dashboard at <a href="http://www.bcsbsos.com">www.bcsbsos.com</a>
-                                    </p>
-                                    <p>
-                                        At a Glance Online Exam Rules:
-                                    </p>
-                                    <p>1. Login to <a href="http://www.bcsbsos.com">www.bcsbsos.com</a> with user ID and password.</p>
-                                    <p>2. Click on the online exam &amp; Results option from the dashboard of your profile. After selecting your course and proper discipline, click on Proceed option and the exam link will show.</p>
-                                    <p>3. After clicking on the Start now box, your test will start.</p>
-                                    <p>4. If the question is MCQ type, each option has T and F circles opposite it. Click T circle if you think True is reasonable or F circle if you think False is reasonable, you can click F circle if you want to change after clicking T circle. (Vice versa).</p>
-                                    <p>5. If the question is SBA Type, click on any circle. There are opportunities to change circles.</p>
-                                    <p>6. If you want to get the next question, click on the Next box. If you want to get the question again without answering any question at the moment, click on the TRY LATER box. After answering the last question of the serial, you will get the opportunity to answer the questions. For example: In the test of 50 questions, if you have TRY LATER the question No. 7, 10, 15, 25, 32, then after answering the last question No. 50, you will get the opportunity to answer the questions No. 7,10,15,25,32 again.</p>
-                                    <p>7. When the test is over, click on the Submit box.</p>
-                                    <p>8. Keep track of the time, if you drop the internet connection after the scheduled time or during the test, the test will auto-submit.</p>
-                                </div>
-                            </div>
-
                         </div>
-
-                        <div class="card">
-                            <div class="card-header bg-white" id="heading-5">
-                                <a href="" class="mix_solve" data-toggle="collapse" data-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
-                                    E. How can i view full question &amp; result?
+                    </div>
+                    <div class="col border">
+                        <div class="img">
+                            <img src="images/gallery-5.jpg" alt="gallery-5" class="img-fluid w-100">
+                            <div class="overly">
+                                <a href="">
+                                    <i class="fa fa-search-plus"></i>
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col border">
+                        <div class="img">
+                            <img src="images/gallery-6.jpg" alt="gallery-6" class="img-fluid w-100">
+                            <div class="overly">
+                                <a href="">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col border">
+                        <div class="img">
+                            <img src="images/gallery-7.jpg" alt="gallery-7" class="img-fluid w-100">
+                            <div class="overly">
+                                <a href="">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col border">
+                        <div class="img">
+                            <img src="images/gallery-8.jpg" alt="gallery-8" class="img-fluid w-100">
+                            <div class="overly">
+                                <a href="">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col border">
+                        <div class="img">
+                            <img src="images/gallery-9.jpg" alt="gallery-9" class="img-fluid w-100">
+                            <div class="overly">
+                                <a href="">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col border">
+                        <div class="img">
+                            <img src="images/gallery-10.jpg" alt="gallery-10" class="img-fluid w-100">
+                            <div class="overly">
+                                <a href="">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col border">
+                        <div class="img">
+                            <img src="images/gallery-11.jpg" alt="gallery-11" class="img-fluid w-100">
+                            <div class="overly">
+                                <a href="">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col border">
+                        <div class="img">
+                            <img src="images/gallery-12.jpg" alt="gallery-12" class="img-fluid w-100">
+                            <div class="overly">
+                                <a href="">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col border">
+                        <div class="img">
+                            <img src="images/gallery-13.jpg" alt="gallery-13" class="img-fluid w-100">
+                            <div class="overly">
+                                <a href="">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col border">
+                        <div class="img">
+                            <img src="images/gallery-14.jpg" alt="gallery-14" class="img-fluid w-100">
+                            <div class="overly">
+                                <a href="">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col border">
+                        <div class="img">
+                            <img src="images/gallery-15.jpg" alt="gallery-15" class="img-fluid w-100">
+                            <div class="overly">
+                                <a href="">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col border">
+                        <div class="img">
+                            <img src="images/gallery-16.jpg" alt="gallery-16" class="img-fluid w-100">
+                            <div class="overly">
+                                <a href="">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                            <div id="collapse-5" class="collapse" aria-labelledby="heading-5" data-parent="#accordion">
-                                <div class="card-body bg-white">
-                                    <p>1. After completing your exam, by clicking on the Submit Button, your full question paper with Your Answer, Correct Answer, Discussion, Reference will be displayed in the Exam View.</p>
-                                    <p>2. Click on the View Result Option and now you can see your Result.</p>
+        <!-- ================= Gallery Part End ================= -->
+
+
+        <div id="testimonial" style="transform: translateY(-80px);"></div>
+        <!-- ================= Testimonial Part Start ================= -->
+        <section id="testimonial_part">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header text-center">
+                            <h2>What Our Doctors Say</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row testimonial_slider text-left">
+
+                    <div class="item p-2">
+                        <div class="col-12 card">
+                            <div class="card-body border">
+                                <div class="img">
+                                    <img class="img-fluid w-100" src="images/testimonial-1.png" alt="testimonial">
+                                </div>
+                                <p>Heartfelt thanks to my dear colleagues who whole heartedly worked hard to make the 31 August meeting on Oncoplastic surgery workshop a success.
+                                    <p>Thanks also to participants from all over the country, to their feelings, their contribution.</p>
+                                    <p>I was overwhelmed to see the surgeons response. Thanks also to the Pune group. May Allah bless us all.</p>
+                                    <h5>Prof. Dr. M Mizanur Rahman</h5>
+                                    <h6>Director (Ex) NICRH, Dhaka, Bangladesh</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="col-12 card">
+                            <div class="card-body border">
+                                <div class="img">
+                                    <img class="img-fluid w-100" src="images/testimonial-2.jpg" alt="testimonial">
+                                </div>
+                                <p>Today the journey of the 2nd batch of Bangladesh School Of Oncoplastic breast Surgery (BSOS) has started in Corona pandemic situation ! We are too much grateful to our respected Sir President of SOSB and HOD of Surgery of BSMMU prof Dr Towhidul Alam sir , Our Chairman ( BSOS ) and mentor prof Dr M Mizanur Rahman Sir , Legendary Professor Dr Majid Sir , and lengedary prof Dr Alamgir Sir for active and dedicated cooperation in Corona pandemic . Thanks is not enough for you you respected Prof Mizanur Rahman Sir ! You are great , more more academic and dedicated teacher. In Corona pandemic situation, we are passing so much academic and interactive zoom meeting.</p>
+                                <h5>Dr. Krishna Rupa Majumder</h5>
+                                <h6>Associate Professor (Surgery) BSMMU, Dhaka, Bangladesh</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="col-12 card">
+                            <div class="card-body border">
+                                <div class="img">
+                                    <img class="img-fluid w-100" src="images/testimonial-3.jpg" alt="testimonial">
+                                </div>
+                                <p>Our Pune tour in Breast Oncoplastic workshop &amp; Signing letter of intent prior to make a memorandum between Bangladesh school of oncoplastic surgery and International school of oncoplastic surgery, Pune. This will educate and train Bangladeshi surgeons in the field of oncoplastic breast surgery.In last two days there was extensive discussion on Breast cancer and oncoplastic surgery among Indo-UK experts...</p>
+                                <h5>Dr. Md Rassell</h5>
+                                <h6>Assistant Professor (Surgery) BSMMU, Dhaka, Bangladesh</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="col-12 card">
+                            <div class="card-body border">
+                                <div class="img">
+                                    <img class="img-fluid w-100" src="images/testimonial-4.jpg" alt="testimonial">
+                                </div>
+                                <p>Bangladesh School of Oncoplastic Surgery(BSOS) successfully arranged the second online session(Zoom) with both the first and second batch together on 12 June evening, Friday taking over 40 participants.It was long four hours meeting.A MDT meeting with the legends on oncology,pathology,surgery took place discussing the tidbits of MDT meeting.For its support Trial 10902 was present.Details of LABC- its different aspects,NACT and its monitoring was also came to discussion.There was an evaluation of the participants as pretest and post. Every body was happy at the end.Stay safe, stay blessed.</p>
+                                <h5>Dr. Sharmistha Roy</h5>
+                                <h6>Consutant (Surgery), Dhaka, Bangladesh</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= Testimonial Part End ================= -->
+
+
+        <div id="faq" style="transform: translateY(-80px);"></div>
+        <!-- ================= FAQ Part Start ================= -->
+        <section id="faq_part">
+            <div class="container">
+                <div class="header text-center">
+                    <h2>F A Q</h2>
+                </div>
+                <div class="row">
+                    <div class="col">
+
+                        <div id="accordion" class="faq_body">
+
+                            <div class="card">
+                                <div class="card-header bg-white" id="heading-1">
+                                    <a href="" class="mix_solve" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                                        A. What is online registration process?
+                                    </a>
+                                </div>
+
+                                <div id="collapse-1" class="collapse" aria-labelledby="heading-1" data-parent="#accordion">
+                                    <div class="card-body bg-white">
+                                        <p>1. Click on the 'Register' button</p>
+                                        <p>2. Provide your name, mobile number, email address and a password of at least 6 digit.</p>
+                                        <p>3. Finaly Click 'Submit' button.</p>
+                                        <p>Note : Your email address will be your user ID.</p>
+                                    </div>
                                 </div>
                             </div>
 
-                        </div>
-                        <!--
+                            <div class="card">
+                                <div class="card-header bg-white" id="heading-2">
+                                    <a href="" class="mix_solve" data-toggle="collapse" data-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
+                                        B. How i watch videos?
+                                    </a>
+                                </div>
+
+                                <div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#accordion">
+                                    <div class="card-body bg-white">
+                                        <p>Videos may be RECORDED or LIVE.</p>
+                                        <p>Live videos will be given to your profile and you can watch it later if you missed the LIVE session due to any unavoidable situation. (Plz click on "Online Lecture Links")</p>
+                                        <p>All videos are organised in your profile and videos.</p>
+                                        <p>1. Are password protected &amp; the password will be shown just before your video start on the video frame. Passwords will remain there and you don't need to memorise them for recall.</p>
+                                        <p>2. Will remain for the whole time of your course period.</p>
+                                        <p>3. Can be watched whenever you want.</p>
+                                        <p>4. Can be watched so many times as your wish.</p>
+                                        <p>5. Can be paused at any moment &amp; then be resumed again and again. When you start playing videos then software system registered with your IP address. Your SIF profile may be deactivated without any prior notice if you share with anyone.So be careful about your ID &amp; Password. As all the videos will remain organised in your profile for whole duration so you don't need to download and we can't help regarding this.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header bg-white" id="heading-3">
+                                    <a href="" class="mix_solve" data-toggle="collapse" data-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+                                        C. Steps required to take a lecture class.
+                                    </a>
+                                </div>
+
+                                <div id="collapse-3" class="collapse" aria-labelledby="heading-3" data-parent="#accordion">
+                                    <div class="card-body bg-white">
+                                        <p>1. First open Google Chrome in the browser (Avoid UC Browser).</p>
+                                        <p>2. Enter the web site <a href="http://www.bcsbsos.com">www.bcsbsos.com</a></p>
+                                        <p>3. Click Login and login with your Email ID and Password.</p>
+                                        <p>4. Click on Online Lecture Links according to the scheduled date and time given in My schedule in the dashboard of your profile.</p>
+                                        <p>5. Click on the name of the scheduled lecture.</p>
+                                        <p>6. As soon as you turn on the video, you will see the VIDEO Password on the screen and type it in the specified place and click Watch Video.</p>
+                                        <p>7. Videos may take up to 5 minutes to load from the server.</p>
+                                        <p>8. Enable high net speed to avoid video streaming and reduce video resolution from settings.</p>
+                                        <p>9. You can increase or decrease the playback speed at your convenience from the video settings option. (.75x, 1.25x etc)</p>
+                                        <p>10. By clicking on the Lecture Sheet of the Dashboard, you will be able to download the lecture sheet of your scheduled class.</p>
+                                        <p>11. There is an option to pause the video, you can pause the video if you need a short break for any reason. You can drag back and forth as per your convenience and need.</p>
+                                        <p>12. Even if you can't watch the lecture video during the routine time, you can watch it even after the scheduled time, but try to complete the watch before the next exam.</p>
+                                        <p>13. Use the COMPLAIN BOX on the dashboard for any IT related issues.</p>
+                                        <p>14. Sit with the necessary preparation before you sit in the online class. Fully charge the device (computer, laptop, tab or smartphone), make sure you have an internet connection, and refrain from exchanging calls on the device during class. You can keep a notebook with a pen, headphones or earphones.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header bg-white" id="heading-4">
+                                    <a href="" class="mix_solve" data-toggle="collapse" data-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
+                                        D. How to appear Online Exam?
+                                    </a>
+                                </div>
+
+                                <div id="collapse-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordion">
+                                    <div class="card-body bg-white">
+                                        <p>
+                                            You can get the exams by clicking on Online Exams &amp; Results Links in your profile Dashboard at <a href="http://www.bcsbsos.com">www.bcsbsos.com</a>
+                                        </p>
+                                        <p>
+                                            At a Glance Online Exam Rules:
+                                        </p>
+                                        <p>1. Login to <a href="http://www.bcsbsos.com">www.bcsbsos.com</a> with user ID and password.</p>
+                                        <p>2. Click on the online exam &amp; Results option from the dashboard of your profile. After selecting your course and proper discipline, click on Proceed option and the exam link will show.</p>
+                                        <p>3. After clicking on the Start now box, your test will start.</p>
+                                        <p>4. If the question is MCQ type, each option has T and F circles opposite it. Click T circle if you think True is reasonable or F circle if you think False is reasonable, you can click F circle if you want to change after clicking T circle. (Vice versa).</p>
+                                        <p>5. If the question is SBA Type, click on any circle. There are opportunities to change circles.</p>
+                                        <p>6. If you want to get the next question, click on the Next box. If you want to get the question again without answering any question at the moment, click on the TRY LATER box. After answering the last question of the serial, you will get the opportunity to answer the questions. For example: In the test of 50 questions, if you have TRY LATER the question No. 7, 10, 15, 25, 32, then after answering the last question No. 50, you will get the opportunity to answer the questions No. 7,10,15,25,32 again.</p>
+                                        <p>7. When the test is over, click on the Submit box.</p>
+                                        <p>8. Keep track of the time, if you drop the internet connection after the scheduled time or during the test, the test will auto-submit.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header bg-white" id="heading-5">
+                                    <a href="" class="mix_solve" data-toggle="collapse" data-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
+                                        E. How can i view full question &amp; result?
+                                    </a>
+                                </div>
+
+                                <div id="collapse-5" class="collapse" aria-labelledby="heading-5" data-parent="#accordion">
+                                    <div class="card-body bg-white">
+                                        <p>1. After completing your exam, by clicking on the Submit Button, your full question paper with Your Answer, Correct Answer, Discussion, Reference will be displayed in the Exam View.</p>
+                                        <p>2. Click on the View Result Option and now you can see your Result.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--
                         <div class="card">
                             <div class="card-header bg-white" id="heading-6">
                                 <a href="" class="mix_solve" data-toggle="collapse" data-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6">
@@ -527,61 +710,62 @@
                         </div>
                         -->
 
-                    </div>
+                        </div>
 
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================= FAQ Part End ================= -->
-
-
-    <!-- ================= About Part Start ================= -->
-    <section id="about_part">
-        <div class="container">
-            <div class="header text-center">
-                <h2>About Us</h2>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="text card card-body bg-white">
-
-                        <h4>Bangladesh School of Oncoplastic Surgery (BSOS) :</h4>
-                        <p>Bangladesh School of Oncoplastic Surgery (BSOS) is the only specialized institute in Bangladesh.</p>
-                        <p>BSOS offers following courses : <b>Refresher's course</b></p>
-                        <p>Bangladesh School of Oncoplastic Surgery (BSOS) is a national umbrella organisation providing cancer research &amp; cancer information for the people of Bangladesh.</p>
-
-                        <h4>Objectives :</h4>
-                        <p>To provide quality cancer treatment</p>
-                        <p>To make a centre of excellence in the country</p>
-                        <p>To carry out research and disseminate the knowledge and findings</p>
-                        <p>To establish a nationwide cancer registry system</p>
-                        <p>To take necessary steps for cancer prevention and control</p>
-
-                        <h4>Activities :</h4>
-                        <p>All diagnostic activities- for cancer detection.</p>
-                        <p>All kinds of treatments- surgery, radiotherapy, chemotherapy etc.</p>
-                        <p>Hospital Based Cancer Registry</p>
-                        <p>It has formulated National Guidelines for high- quality, cost- effective cancer treatment plan for 4 common cancers of our country.</p>
-                        <p>Different training programs- for health professionals –histopathologists, gynecologists, nurses, technologists, community leaders etc.</p>
-                        <p>Organizing tobacco prevention &amp; cessation programmes in the community.</p>
-                        <p>Participation in national activities- such as observance of World Cancer Day, World Pediatric Cancer Day, No Tobacco Day, Breast &amp; Cervical cancer awareness month and chalking out of special Breast Cancer Screening Campaign.</p>
-                        <p>Telemedicine services.</p>
-                        <p>Publication of journal.</p>
-                        <p>Palliative care services.</p>
-                        <p>Academic activities.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ================= About Part End ================= -->
+        <!-- ================= FAQ Part End ================= -->
 
+
+        <div id="about" style="transform: translateY(-80px);"></div>
+        <!-- ================= About Part Start ================= -->
+        <section id="about_part">
+            <div class="container">
+                <div class="header text-center">
+                    <h2>About Us</h2>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="text card card-body bg-white">
+
+                            <h4>Bangladesh School of Oncoplastic Surgery (BSOS) :</h4>
+                            <p>Bangladesh School of Oncoplastic Surgery (BSOS) is the only specialized institute in Bangladesh.</p>
+                            <p>BSOS offers following courses : <b>Refresher's course</b></p>
+                            <p>Bangladesh School of Oncoplastic Surgery (BSOS) is a national umbrella organisation providing cancer research &amp; cancer information for the people of Bangladesh.</p>
+
+                            <h4>Objectives :</h4>
+                            <p>To provide quality cancer treatment</p>
+                            <p>To make a centre of excellence in the country</p>
+                            <p>To carry out research and disseminate the knowledge and findings</p>
+                            <p>To establish a nationwide cancer registry system</p>
+                            <p>To take necessary steps for cancer prevention and control</p>
+
+                            <h4>Activities :</h4>
+                            <p>All diagnostic activities- for cancer detection.</p>
+                            <p>All kinds of treatments- surgery, radiotherapy, chemotherapy etc.</p>
+                            <p>Hospital Based Cancer Registry</p>
+                            <p>It has formulated National Guidelines for high- quality, cost- effective cancer treatment plan for 4 common cancers of our country.</p>
+                            <p>Different training programs- for health professionals –histopathologists, gynecologists, nurses, technologists, community leaders etc.</p>
+                            <p>Organizing tobacco prevention &amp; cessation programmes in the community.</p>
+                            <p>Participation in national activities- such as observance of World Cancer Day, World Pediatric Cancer Day, No Tobacco Day, Breast &amp; Cervical cancer awareness month and chalking out of special Breast Cancer Screening Campaign.</p>
+                            <p>Telemedicine services.</p>
+                            <p>Publication of journal.</p>
+                            <p>Palliative care services.</p>
+                            <p>Academic activities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= About Part End ================= -->
+    </main>
 
     <!-- ================= Footer Start ================= -->
-    <footer class="mt-auto">
+    <footer id="footer" class="mt-auto">
         <div class="container py-4">
             <div class="row my-4">
                 <div class="col-lg-4 text-left">
@@ -612,7 +796,18 @@
                 </div>
             </div>
         </div>
-        <p class="py-4 text-white bg-secondary">&copy; 2020 <a class="pl-2 text-white btn-link" href="index.html">BCSBSOS.COM</a></p>
+        <div class="py-4 bg-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p class="text-white">&copy; 2020 <a class="pl-2 text-white btn-link" href="index.html">bcsbsos.com</a></p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="text-white">Developed by <a class="pl-2 text-white btn-link" href="http://www.medigeneit.com/">Medigene IT</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- ================= Footer End ================= -->
@@ -633,15 +828,18 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- jQuery & Waypoints -->
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
 
 
     <!-- PlugIns & Others Script -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <!--
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/msi-typing.min.js"></script>
     <script src="js/isotope.min.js"></script>
-    <script src="js/slick.min.js"></script>
+-->
 
 
     <!-- Main Script -->

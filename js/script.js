@@ -17,6 +17,7 @@ function register() {
 }
 
 $(function () {
+
     //password toggle eye
     $(".toggle-password").click(function () {
 
@@ -40,12 +41,6 @@ $(function () {
         }
     });
 
-
-    //Student Counter
-    $('.counter').counterUp({
-        delay: 19,
-        time: 1919
-    });
 
     //Testimonial Slider
     $('.testimonial_slider').slick({
@@ -88,11 +83,17 @@ $(function () {
         ]
     });
 
-    //Logo Typing Effect Create By MSI:313
-    //msiTyping("#logo_typing", 250, 0);
+    $('.venobox').venobox({
+        //framewidth: '60vw',                                // default: ''
+        //frameheight: '40vw',                               // default: ''
+        border: '1px',                                     // default: '0'
+        bgcolor: '#000',                                   // default: '#fff'
+        numeratio: true,                                   // default: false
+        infinigall: true,                                  // default: false
+        share: ['download'],                                // default: []
+        spinner: 'cube-grid',
+    });
 
-    //$('.login_register_click').click(function () {
-    //  $('.login_register_body').removeClass('login_hidden');
-    //});
+
 
 });
