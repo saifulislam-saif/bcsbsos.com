@@ -429,7 +429,7 @@ html {
 /* ================= Testimonial Part Start ================= */
 #testimonial_part {
     background: #fff;
-    padding: 0px 0 30px;
+    padding: 0;
 }
 
 #testimonial_part .header h2 {
@@ -471,7 +471,7 @@ html {
 
 .testimonial_slider {
     position: relative;
-    padding-bottom: 45px;
+    padding-bottom: 30px;
 }
 
 .testimonial_slider .item .img {
@@ -485,7 +485,6 @@ html {
     position: absolute;
     left: 50%;
     bottom: 15px;
-    bottom: 0;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -501,7 +500,7 @@ html {
 
 .testimonial_slider ul.slick-dots li button {
     font-size: 0;
-    border: 2px solid #fff;
+    border: 2px solid #00000044;
     background: transparent;
     border-radius: 50%;
     width: 15px;
@@ -514,11 +513,11 @@ html {
 }
 
 .testimonial_slider ul.slick-dots li button:hover {
-    background: #c1c1c1;
+    background: #00000044;
 }
 
 .testimonial_slider ul.slick-dots li.slick-active button {
-    background: #fff;
+    background: #00000088;
 }
 
 /* ================= Testimonial Part End ================= */
