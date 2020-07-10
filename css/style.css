@@ -46,7 +46,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 /*  ==================== Common CSS end ==================== */
 
@@ -255,8 +255,8 @@ html {
 
 #log_part .field-icon {
     position: relative;
-    left: 240px;
-    top: -5px;
+    left: 260px;
+    top: -7px;
     font-size: 20px;
     z-index: 2;
     color: #777;
@@ -301,6 +301,11 @@ html {
     #log_part .input-group {
         width: 260px;
         margin-left: -20px;
+    }
+
+    #log_part .field-icon {
+        left: 235px;
+        top: 0px;
     }
 }
 
@@ -582,7 +587,7 @@ html {
     font-size: 16px;
     line-height: 2;
     padding: 0 30px 5px 60px;
-/*    text-align: justify;*/
+    /*    text-align: justify;*/
     position: relative;
 }
 
@@ -711,7 +716,7 @@ footer i {
 .sidebar a {
     display: block;
     color: black;
-    padding: 10px 0 10px 20px ;
+    padding: 10px 0 10px 20px;
     text-decoration: none;
     border-bottom: 1px #fff solid;
     font-size: 20px;
@@ -774,11 +779,13 @@ div.content {
     padding-right: 5px;
     font-size: 21px;
 }
-.mobile-button{
+
+.mobile-button {
     padding-left: 30px;
     padding-top: 10px;
 }
-.mobile-button a{
+
+.mobile-button a {
     padding-right: 10px;
 }
 
@@ -792,7 +799,7 @@ div.content {
 }
 
 .panel .panel-heading {
-    background-color:#44ca75 !important;
+    background-color: #44ca75 !important;
     color: #FFFFFF !important;
     padding: 8px !important;
 }
